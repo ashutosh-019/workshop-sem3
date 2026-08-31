@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(24, 24, 224);
+            margin: 200px 0 0 100px;
+        }
+    </style>
+    <script>
+        function eventcall(){
+            alert("this is the mouseevents");
+        }
+        function section(){
+            alert("warning");
+        }
+    </script>
+</head>
+<body>
+    <button id="box" oncontextmenu="eventcall()">Right-click me</button>
+    <button
+    onclick="eventcall()"
+    onmouseover="section()"
+    onmouseout="alert('mouse left the button')">
+    click me
+</button>
+</body>
+</html>
